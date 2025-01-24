@@ -1,17 +1,12 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Promo Banner -->
-    <div class="bg-black text-white text-sm font-medium text-center py-2 px-4 md:px-8 overflow-hidden">
-      <div class="marquee">
-        <span class="block md:inline-block">
-          20% SITEWIDE PROMO — PROMO CODE VALUE45 &nbsp;
-        </span>
-        <span class="hidden md:inline-block">
-          — 20% SITEWIDE — PROMO &nbsp; — PROMO CODE VALUE45 &nbsp; — 20% SITEWIDE PROMO &nbsp; — PROMO CODE VALUE45
-          &nbsp; — 20%
-          SITEWIDE PROMO &nbsp; — PROMO CODE VALUE45 &nbsp; — 20% SITEWIDE PROMO &nbsp; — PROMO CODE VALUE45
-        </span>
-      </div>
+    <div class="flex items-center overflow-hidden bg-black p-4 text-center text-xs text-white md:px-8">
+      <span class="block whitespace-nowrap lg:inline-block"> 20% SITEWIDE PROMO &nbsp; &mdash; &nbsp; PROMO CODE VALUE45
+        &nbsp; &mdash; &nbsp; 20% SITEWIDE &nbsp; &mdash; &nbsp; PROMO CODE VALUE45 &nbsp; &mdash; &nbsp; 20% SITEWIDE
+        &nbsp; &mdash; &nbsp; PROMO &nbsp; &mdash; &nbsp; PROMO CODE VALUE45 &nbsp; &mdash; &nbsp; 20% SITEWIDE PROMO
+        &nbsp; &mdash; &nbsp; PROMO CODE VALUE45 &nbsp; &mdash; &nbsp; 20% SITEWIDE PROMO &nbsp; &mdash; &nbsp; PROMO
+        CODE VALUE45 &nbsp; &mdash; &nbsp; 20% SITEWIDE PROMO &nbsp; &mdash; &nbsp; PROMO CODE VALUE45 </span>
     </div>
     <header>
       <nav class="max-w-screen-2xl mx-auto w-full px-4 sm:px-8 py-4 flex items-center justify-between">
@@ -35,7 +30,8 @@
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span v-if="cart.length"
-              class="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">{{ cart.length }}</span>
+              class="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">{{
+                cart.length }}</span>
           </button>
           <div class="flex items-center relative">
             <img src="../assets/img/Profile.png" alt="Profile"
@@ -94,7 +90,8 @@
         </div>
         <!-- img -->
         <div class="col-start-1 row-start-1 lg:max-h-44">
-          <img class="h-full w-full backdrop-blur-sm backdrop-filter" src="../assets/img/pike_hero_img.png" alt="hero img">
+          <img class="h-full w-full backdrop-blur-sm backdrop-filter" src="../assets/img/pike_hero_img.png"
+            alt="hero img">
         </div>
       </section>
       <section class="mt-4 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-x-6 sm:gap-y-0">
