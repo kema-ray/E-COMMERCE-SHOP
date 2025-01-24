@@ -26,6 +26,8 @@ Pike Store is a modern, responsive e-commerce web application built with Vue 3, 
 ## Prerequisites
 - Node.js (v16+)
 - npm or yarn
+- The Go sso-middleware must be running ([Go Project Repository](https://github.com/kema-ray/sso-middleware.git))
+
 
 ## Installation
 
