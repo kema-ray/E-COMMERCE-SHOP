@@ -15,7 +15,7 @@
     </div>
     <header>
       <nav class="max-w-screen-2xl mx-auto w-full px-4 sm:px-8 py-4 flex items-center justify-between">
-        <img src="../assets/img/Logo.png" alt="Value8 Group" class="h-8 sm:h-10" />
+        <img src="../assets/img/value8_logo.png" alt="Value8 Group" class="h-6 sm:h-8" />
         <nav class="hidden lg:flex gap-4 sm:gap-8">
           <a href="#" class="text-[#0047BA] font-bold text-sm sm:text-base">Discover</a>
           <a href="#" class="text-gray-700 text-sm sm:text-base">Browse</a>
@@ -94,7 +94,7 @@
         </div>
         <!-- img -->
         <div class="col-start-1 row-start-1 lg:max-h-44">
-          <img class="h-full w-full backdrop-blur-sm backdrop-filter" src="../assets/img/banners.png" alt="hero img">
+          <img class="h-full w-full backdrop-blur-sm backdrop-filter" src="../assets/img/pike_hero_img.png" alt="hero img">
         </div>
       </section>
       <section class="mt-4 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-x-6 sm:gap-y-0">

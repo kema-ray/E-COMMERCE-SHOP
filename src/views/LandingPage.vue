@@ -12,34 +12,31 @@
         </span>
       </div>
     </div>
-    <nav class="max-w-screen-2xl mx-auto w-full relative flex items-center justify-between px-4 md:px-8 py-4">
-      <img src="../assets/img/Logo.png" alt="Value8 Group" class="h-6 md:h-8" />
-      <button @click="isMenuOpen = !isMenuOpen" class="md:hidden">
-        <svg class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <div class="hidden md:flex gap-8">
-        <a href="#" class="text-[#0047BA] font-bold text-sm sm:text-base">Discover</a>
-          <a href="#" class="text-gray-700 text-sm sm:text-base">Browse</a>
-          <a href="#" class="text-gray-700 text-sm sm:text-base">About</a>
-          <a href="#" class="text-gray-700 text-sm sm:text-base">Contact Us</a>
-      </div>
-      <button @click="handleLogin" class="hidden md:block font-semibold text-base px-6 py-2 bg-blue-100 text-[#0047BA] rounded-full">
-        Log In
-      </button>
-      <div v-if="isMenuOpen" class="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden p-4 z-50">
-          <div class="flex flex-col gap-4">
-            <a href="#" class="text-[#0047BA]">Discover</a>
-            <a href="#" class="text-gray-700">Browse</a>
-            <a href="#" class="text-gray-700">About</a>
-            <a href="#" class="text-gray-700">Contact Us</a>
-            <button @click="handleLogin" class="px-6 py-2 bg-blue-50 text-[#0047BA] rounded-full w-full">
-              Log In
-            </button>
-          </div>
-        </div>
-    </nav>
+    <nav class="relative mx-auto flex w-full max-w-screen-2xl items-center justify-between px-4 py-4 md:px-8">
+  <img src="../assets/img/value8_logo.png" alt="Value8 Group" class="h-6 md:h-8" />
+  <button @click="isMenuOpen = !isMenuOpen" class="md:hidden">
+    <svg class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+  <div class="hidden gap-8 md:flex">
+    <a href="#" class="text-sm font-bold text-[#0047BA] sm:text-base">Discover</a>
+    <a href="#" class="text-sm text-gray-700 sm:text-base">Browse</a>
+    <a href="#" class="text-sm text-gray-700 sm:text-base">About</a>
+    <a href="#" class="text-sm text-gray-700 sm:text-base">Contact Us</a>
+  </div>
+  <button @click="handleLogin" class="hidden rounded-full bg-[#0047BA]/10 px-6 py-2 text-sm font-medium tracking-[-0.6%] text-[#0047BA] md:block">Log In</button>
+  <div v-if="isMenuOpen" class="absolute top-full right-0 left-0 z-50 bg-white p-4 shadow-lg md:hidden">
+    <div class="flex flex-col gap-4">
+      <a href="#" class="text-sm font-bold text-[#0047BA] sm:text-base">Discover</a>
+      <a href="#" class="text-sm text-gray-700 sm:text-base">Browse</a>
+      <a href="#" class="text-sm text-gray-700 sm:text-base">About</a>
+      <a href="#" class="text-sm text-gray-700 sm:text-base">Contact Us</a>
+      <button @click="handleLogin" class="w-full rounded-full bg-blue-50 px-6 py-2 text-[#0047BA]">Log In</button>
+    </div>
+  </div>
+</nav>
+
 
     <div class="max-w-screen-2xl mx-auto w-full  text-center px-4 my-8 md:my-16">
       <h1 class="text-3xl lg:text-6xl font-semibold mb-3 font-sans">Welcome to Pike Store</h1>
